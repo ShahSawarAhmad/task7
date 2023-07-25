@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists Using Array</title>
+
+    <style>
+        body{
+            background-color: #e6e6e6;
+
+        }
+        table {
+            background-color: rgb(253, 245, 245);
+            border-collapse: collapse;
+            width: 80%;
+            margin-top: 20px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #838383;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #faf4fd;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lists using Array and Populate through Loop</h1>
+    <h2>Table</h2>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Quality</th>
+            <th>Quantity</th>
+        </tr>
+        <script type="text/javascript">
+            var headers = ['Product ID', 'Product Name', 'Product Quality', 'Product Quantity'];
+
+            var products = [
+                {
+                    productId: 1676,
+                    productName: 'Toyata',
+                    productQuality: 'Good',
+                    productQuantity: '23 cars'
+                },
+                {
+                    productId: 2211,
+                    productName: 'BMW',
+                    productQuality: 'Good',
+                    productQuantity: '9 Cars'
+                },
+                {
+                    productId: 1232,
+                    productName: 'Suzike',
+                    productQuality: 'Good',
+                    productQuantity: '11 Cars'
+                },
+                {
+                    productId: 8797,
+                    productName: 'Honda',
+                    productQuality: 'V.Good',
+                    productQuantity: '15 cars'
+                },
+                {
+                    productId: 8765,
+                    productName: 'jeeps',
+                    productQuality: 'Good',
+                    productQuantity: '3 cars'
+                }
+            ];
+
+            for (let i = 0; i < products.length; i++) {
+                document.write("<tr><td>" + products[i].productId + "</td><td>" + products[i].productName + "</td><td>" +
+                    products[i].productQuality + "</td><td>" + products[i].productQuantity + "</td></tr>");
+            }
+        </script>
+    </table>
+
+    <h3>List of available items</h3>
+    <ul>
+        <script type="text/javascript">
+            var course = ["suger", "salt", "oli", "Milk", "wheat"];
+            for (let i = 0; i < course.length; i++) {
+                document.write("<li>" + course[i] + "</li>");
+            }
+        </script>
+    </ul>
+        </script>
+    </ol>
+</body>
+
+</html>
